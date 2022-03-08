@@ -24,12 +24,11 @@
         android:id="@+id/textView9"
         android:layout_width="334dp"
         android:layout_height="295dp"
-        android:layout_marginTop="60dp"
         android:background="@android:drawable/editbox_background"
         android:backgroundTint="#FAF5F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView10"
@@ -51,12 +50,12 @@
         android:id="@+id/pendapatan_batal"
         android:layout_width="75dp"
         android:layout_height="40dp"
-        android:layout_marginStart="125dp"
         android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#2196F3"
         android:text="Batal"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pendapatan_simpan"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <Button
@@ -64,13 +63,12 @@
         android:layout_width="75dp"
         android:layout_height="40dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="125dp"
+        android:layout_marginEnd="116dp"
         android:backgroundTint="#2196F3"
+        android:onClick="simpan"
         android:text="simpan"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/pendapatan_batal"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
